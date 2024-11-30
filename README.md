@@ -1,4 +1,4 @@
-# **Renstaurant Payment**
+# **Restaurant Payment**
 
 This is my first project to begin deepening knowledge in web development using HTML, CSS, and JavaScript. Is an interactive web application for managing a product menu, selecting items, and calculating the total cost. The user interface is simple, with a structure that allows users to easily navigate between product categories and interact with selected items.
 
