@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Colonna Sinistra - Menu Categorie -->
+        <div class="sidebar">
+            <div class="div-logo">
+                <img class="logo" src="Media/logo1.png">
+            </div>
+            
+            <div class="button-container">
+                <button id="Antipasti" class="button type1">
+                    <span class="btn-txt">Antipasti</span>
+                </button>
+                <button id="Pizze" class="button type1">
+                    <span class="btn-txt">Pizze</span>
+                </button>
+                <button id="Pizze-bianche" class="button type1">
+                    <span class="btn-txt">Pizze bianche</span>
+                </button>
+                <button id="Primi" class="button type1">
+                    <span class="btn-txt">Primi</span>
+                </button>
+                <button id="Secondi" class="button type1">
+                    <span class="btn-txt">Secondi</span>
+                </button>
+                <button id="Bevande" class="button type1">
+                    <span class="btn-txt">Bevande</span>
+                </button>
+                <button id="Vini" class="button type1">
+                    <span class="btn-txt">Vini</span>
+                </button>
+                <button id="Alcolici" class="button type1">
+                    <span class="btn-txt">Alcolici</span>
+                </button>
+                <button id="Dessert" class="button type1">
+                    <span class="btn-txt">Dessert</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Colonna Centrale - Lista Prodotti -->
+        <div class="main-content">
+            <div class="product-grid" >
+                
+            </div>
+        </div>
+
+        <!-- Colonna Destra - Riepilogo Ordine -->
+        <div class="order-summary">
+            <div class="pizze-screen"> 
+                <div class="screen">
+
+                </div>
+
+                <div class="total">
+                    <span class="label-total">Totale:</span>
+                    <span class="price"> 
+                        $ 0.00
+                    </span>
+                </div>
+            </div>
+            
+            <div class="calculator">
+                <div class="line">
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="tasto" id="canc">C</div>
+                    <div id='delete-button' class="tasto delete">
+                        <i class='bx bxs-trash' style="height: 40; width: 40; font-weight: 500; font-size: 24px; justify-content: center;"></i>
+                    </div>
+                </div>
+                
+                <div class="line">
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="tasto input" id="resto">
+                        <i class='bx bx-dollar-circle' style="font-size: auto;"></i>
+                    </div>
+                    <input type="text" id="contanti" name="contanti" placeholder="$" required >
+                </div>
+
+                <div class="line">
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                    <div class="tasto input" id="divide">/</div>        
+                    <input type="text" id="num-persone" name="num-persone" placeholder="n°" required >
+                </div>
+
+                <div class="zero-line">
+                    <div class="number zero">0</div>
+                    <div class="number">.</div>
+                    <div class="tasto input" id="sconta">%</div>
+                    <input type="text" id="sconto" name="sconto" placeholder="%" required >
+                </div>
+                
+                
+                <div class="altri-tasti">
+                    <button class="tasto scontrino" id="receipt-button">
+                        <i class="fa fa-receipt"></i> 
+                        <span> Scontrino</span>
+                    </button>
+    
+                    <div class="tasto input" id="back-button">
+                        <i class='bx bx-rotate-left'></i> 
+                    </div>
+    
+                    <div class="tasto input" id="delete-input">
+                        <i class='bx bxs-x-square'></i>
+                    </div>
+                </div>
+                   
+            </div>    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
